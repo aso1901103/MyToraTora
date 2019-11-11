@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/kiyomasa"
+        android:layout_width="@dimen/kiyomasaButton"
+        android:layout_height="@dimen/kiyomasaButton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/kiyomasa" />
+
+    <ImageButton
+        android:id="@+id/ba"
+        android:layout_width="@dimen/kiyomasaButton"
+        android:layout_height="@dimen/kiyomasaButton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897"
+        app:srcCompat="@drawable/oba" />
+
+    <ImageButton
+        android:id="@+id/tora"
+        android:layout_width="@dimen/kiyomasaButton"
+        android:layout_height="@dimen/kiyomasaButton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/tora" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ToraTora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/yajirusi"
+        android:layout_height="@dimen/yajirusi"
+        app:layout_constraintBottom_toTopOf="@+id/ba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kiyomasa"
+        app:srcCompat="@drawable/yajirusi1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/yajirusimin"
+        android:layout_height="@dimen/yajirusimin"
+        app:layout_constraintBottom_toBottomOf="@+id/tora"
+        app:layout_constraintEnd_toStartOf="@+id/ba"
+        app:layout_constraintStart_toEndOf="@+id/tora"
+        app:layout_constraintTop_toTopOf="@+id/ba"
+        app:srcCompat="@drawable/yajirusi2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/yajirusi"
+        android:layout_height="@dimen/yajirusi"
+        app:layout_constraintBottom_toTopOf="@+id/tora"
+        app:layout_constraintEnd_toStartOf="@+id/kiyomasa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yajirusi3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

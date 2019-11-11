@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kiyomasaButton">150dp</dimen>
+    <dimen name="yajirusi">100dp</dimen>
+    <dimen name="yajirusimin">50dp</dimen>
+    <dimen name="Result_Draw_Size">24sp</dimen>
+</resources>
