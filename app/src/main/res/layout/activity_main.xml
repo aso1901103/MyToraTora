@@ -24,9 +24,9 @@
         android:layout_height="@dimen/kiyomasaButton"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897"
+        app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@drawable/oba" />
 
     <ImageButton
@@ -35,9 +35,9 @@
         android:layout_height="@dimen/kiyomasaButton"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.899"
+        app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@drawable/tora" />
 
     <TextView
@@ -55,9 +55,9 @@
         android:id="@+id/imageView2"
         android:layout_width="@dimen/yajirusi"
         android:layout_height="@dimen/yajirusi"
-        app:layout_constraintBottom_toTopOf="@+id/ba"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tora"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/kiyomasa"
         app:srcCompat="@drawable/yajirusi1" />
 
     <ImageView
@@ -74,8 +74,8 @@
         android:id="@+id/imageView4"
         android:layout_width="@dimen/yajirusi"
         android:layout_height="@dimen/yajirusi"
-        app:layout_constraintBottom_toTopOf="@+id/tora"
-        app:layout_constraintEnd_toStartOf="@+id/kiyomasa"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ba"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/yajirusi3" />
 

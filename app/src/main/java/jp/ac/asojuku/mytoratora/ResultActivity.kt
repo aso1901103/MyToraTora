@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
     //kiyomasa,oba,toraを表す定数を定義する
-    val kiyomasa = 0; val ba = 1;val tora = 2;
+    val tora = 0; val ba = 1;val kiyomasa = 2;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,18 +22,18 @@ class ResultActivity : AppCompatActivity() {
         val myHand:Int;
         //idの値によって処理を分岐、自分のじゃんけん画像を切り替える
         myHand = when(id){
-            R.id.kiyomasa -> {MyChoice.setImageResource(R.drawable.kiyomasa);kiyomasa}
-            R.id.ba -> {MyChoice.setImageResource(R.drawable.oba);ba}
             R.id.tora -> {MyChoice.setImageResource(R.drawable.tora);tora}
+            R.id.ba -> {MyChoice.setImageResource(R.drawable.oba);ba}
+            R.id.kiyomasa -> {MyChoice.setImageResource(R.drawable.kiyomasa);kiyomasa}
             else -> kiyomasa
         }
         //コンピューターの手をランダムに決める
         val comHand = (Math.random()*3).toInt();//メソッドで組み立てた手を採用する
         //コンピューターの手に合わせてコンピューターの画像を切り替える
         when(comHand){
-            kiyomasa -> ComChoice.setImageResource(R.drawable.kiyomasa)
-            ba -> ComChoice.setImageResource(R.drawable.oba)
             tora -> ComChoice.setImageResource(R.drawable.tora)
+            ba -> ComChoice.setImageResource(R.drawable.oba)
+            kiyomasa -> ComChoice.setImageResource(R.drawable.kiyomasa)
         }
         val gameResult = (comHand - myHand + 3) % 3
         //計算結果に合わせて勝敗メッセージを切り替える
